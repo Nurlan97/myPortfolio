@@ -3,9 +3,9 @@ import './portfolio.css'
 import IMG1 from '../../assets/online-shopping.png'
 import IMG2 from '../../assets/stroyka-store.png'
 import IMG3 from '../../assets/weather-app.png'
-import IMG4 from '../../assets/portfolio4.jpg'
-import IMG5 from '../../assets/portfolio5.png'
-import IMG6 from '../../assets/portfolio6.jpg'
+import IMG4 from '../../assets/interior_design.png'
+// import IMG5 from '../../assets/portfolio5.png'
+// import IMG6 from '../../assets/portfolio6.jpg'
 
 
 const data = [
@@ -33,24 +33,24 @@ const data = [
   {
     id: 4,
     image: IMG4,
-    title: 'Maintaining tasks and tracking progress',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16955822-Maintaining-tasks-and-tracking-progress'
+    title: 'Interior Design Website',
+    github: 'https://github.com/Nurlan97/interior_design',
+    demo: 'https://interior-design-nine.vercel.app/'
   },
-  {
-    id: 5,
-    image: IMG5,
-    title: 'Charts templates & infographics in Figma',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16541289-Orion-UI-kit-Charts-templates-infographics-in-Figma'
-  },
-  {
-    id: 6,
-    image: IMG6,
-    title: 'Charts templates & infographics in Figma',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/15887665-Orion-UI-kit-Charts-templates-infographics-in-Figma'
-  }
+  // {
+  //   id: 5,
+  //   image: IMG5,
+  //   title: 'Charts templates & infographics in Figma',
+  //   github: 'https://github.com',
+  //   demo: 'https://dribbble.com/shots/16541289-Orion-UI-kit-Charts-templates-infographics-in-Figma'
+  // },
+  // {
+  //   id: 6,
+  //   image: IMG6,
+  //   title: 'Charts templates & infographics in Figma',
+  //   github: 'https://github.com',
+  //   demo: 'https://dribbble.com/shots/15887665-Orion-UI-kit-Charts-templates-infographics-in-Figma'
+  // }
 ]
 
 
@@ -69,10 +69,11 @@ const Portfolio = () => {
               <article key={id} className='portfolio__item'>
                 <div className="portfolio__item-image">
                   <img src={image} alt={title} />
+                  <h3>{title}</h3>
                 </div>
-                <h3>{title}</h3>
+                
                 <div className="portfolio__item-cta">
-                  <a href={github} className='btn' target='_blank'>GithUb</a>
+                  <a href={github} className='btn' target='_blank'>GitHub</a>
                   <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
                 </div>
 

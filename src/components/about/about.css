@@ -103,8 +103,11 @@
     }
 
     .about__cards {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem
+        /* grid-template-columns: 1fr 1fr;
+        gap: 1rem */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .about__content {

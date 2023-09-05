@@ -2,7 +2,8 @@ import React from 'react'
 import './about.css'
 import ME from '../../assets/waterfall.jpg'
 import { FaAward } from 'react-icons/fa'
-import { FiUsers } from 'react-icons/fi'
+// import { FiUsers } from 'react-icons/fi'
+import { LuLanguages } from 'react-icons/lu'
 import { VscFolderLibrary } from 'react-icons/vsc'
 
 const About = () => {
@@ -27,16 +28,19 @@ const About = () => {
             </article>
 
             <article className='about__card'>
-              <FiUsers className='about__icon' />
-              <h5>Clients</h5>
-              <small>10+ Worldwide</small>
-            </article>
-
-            <article className='about__card'>
               <VscFolderLibrary className='about__icon' />
               <h5>Projects</h5>
               <small>10+ completed</small>
             </article>
+            
+            <article className='about__card'>
+              <LuLanguages className='about__icon' />
+              <h5>Languages</h5>
+              <small>English (C1)</small> <br />
+              <small>Russian (C1)</small> <br />
+              <small>Kyrgyz (Native)</small>
+            </article>
+
           </div>
 
           <p>
