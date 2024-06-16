@@ -9,7 +9,7 @@ const Services = () => {
       <h2>Services</h2>
 
       <div className="container services__container">
-        <article className="service">
+        <div className="service">
           <div className="service__head">
             <h3>Web Development</h3>
           </div>
@@ -18,6 +18,10 @@ const Services = () => {
             <li>
               <BiCheck className='service__list-icon'/>
               <p>Online Marketplace </p>
+            </li>
+            <li>
+              <BiCheck className='service__list-icon'/>
+              <p>Travel App</p>
             </li>
             <li>
               <BiCheck className='service__list-icon'/>
@@ -41,7 +45,7 @@ const Services = () => {
             </li>
             
           </ul>
-        </article>
+        </div>
         {/* END OF WEB DEVELOPMENT*/}
 
               </div>
